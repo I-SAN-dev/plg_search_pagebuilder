@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="search" method="upgrade">
+	<name>plg_search_pagebuilder</name>
+	<author>Sebastian Antosch</author>
+	<creationDate>Dezember 2015</creationDate>
+	<copyright>Copyright (C) 2015 I-SAN.de Webdesign + Hosting GbR</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>s.antosch@i-san.de</authorEmail>
+	<authorUrl>http://i-san.de</authorUrl>
+	<version>3.0.0</version>
+	<description>Enables search of sp_pagebuilder pages</description>
+	<files>
+		<filename plugin="pagebuilder">pagebuilder.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="Maximum results to display"
+					label="Limit"
+					size="5"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
